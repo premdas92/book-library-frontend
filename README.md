@@ -1,12 +1,41 @@
-# React + Vite
+# 📚 Book Library Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This folder contains the **React + Vite frontend** for the Book Library application. It provides a user interface to view, add, search, and update books via the backend REST API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Getting started
 
-## Expanding the ESLint configuration
+1. **Install dependencies**  
+   ```bash
+   npm install
+   ```
+2. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+By default, the Vite dev server will run at http://localhost:5173
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+✅ Dashboard: displays a list of books
+✅ Add book modal: add a new book with form validation
+✅ Toggle switch: mark books as read/unread
+✅ Search box: search books by title or author
+✅ Filter radio buttons: filter books by status (All, Read, Unread)
+✅ Responsive design: sidebar and layout adapt to mobile and desktop
+✅ Routing: uses React Router for standalone book detail pages at /book/:id
+
+## 🔗 API integration
+The frontend communicates with the backend REST API (default: http://localhost:7777/api) to:
+- Fetch all books
+- Search books by query
+- Fetch books by status
+- Add a new book
+- Update book status
+- Fetch book details by ID
+
+## 🛠️ Tech stack
+- Frontend framework: React (with Vite)
+- Styling: Tailwind CSS
+- Routing: React Router
+- HTTP client: Axios
